@@ -34,7 +34,7 @@ const Contact = () => {
           <div className="flex gap-4 mt-10">
             {[
               { icon: <Github />, link: "https://github.com/David-coder-56" },
-              { icon: <Linkedin />, link: "#" },
+              { icon: <Linkedin />, link: "" },
               { icon: <Smartphone />, link: "#" },
               { icon: <Facebook />, link: "https://www.facebook.com/davidbankole.568?mibextid=wwXIfr&mibextid=wwXIfr" }
             ].map((social, i) => (
