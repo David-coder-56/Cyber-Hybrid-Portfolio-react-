@@ -12,7 +12,7 @@ const Hero = () => {
           transition={{ duration: 0.8 }}
         >
           <span className="text-blue-500 font-mono tracking-widest uppercase text-sm mb-4 block">
-            Software Engineer // 2026
+            Software Engineer Student // currently
           </span>
           
           <h1 className="text-5xl md:text-7xl font-bold mb-2 bg-gradient-to-r from-blue-600 to-cyan-400 bg-clip-text text-transparent">
