@@ -1,7 +1,39 @@
 import { motion } from 'framer-motion';
 import { Mail, Github, Linkedin, Smartphone, Send, MessageCircle, Facebook } from 'lucide-react';
+import { useState } from 'react';
 
 const Contact = () => {
+  const [status, setStatus] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setStatus('');
+
+    const formData = new FormData(e.target);
+    
+    try {
+      const response = await fetch('https://formspree.io/f/xbdanwnn', {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+
+      if (response.ok) {
+        setStatus('SUCCESS');
+        e.target.reset();
+      } else {
+        setStatus('ERROR');
+      }
+    } catch (error) {
+      setStatus('ERROR');
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
   return (
     <section id="contact" className="py-24 px-6 max-w-7xl mx-auto">
       <div className="grid lg:grid-cols-2 gap-16 items-start">
@@ -51,23 +83,71 @@ const Contact = () => {
           whileInView={{ opacity: 1, x: 0 }}
           className="p-8 rounded-3xl bg-white dark:bg-darkCard border border-slate-200 dark:border-slate-800 shadow-2xl shadow-blue-500/5"
         >
-          <form className="space-y-6">
+          <form onSubmit={handleSubmit} className="space-y-6">
             <div className="grid md:grid-cols-2 gap-6">
               <div className="space-y-2">
                 <label className="text-sm font-bold ml-1">Name</label>
-                <input type="text" placeholder="John Doe" className="w-full p-4 rounded-xl bg-slate-50 dark:bg-darkBg border border-slate-200 dark:border-slate-700 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition-all" />
+                <input 
+                  type="text" 
+                  name="name"
+                  placeholder="John Doe" 
+                  required
+                  className="w-full p-4 rounded-xl bg-slate-50 dark:bg-darkBg border border-slate-200 dark:border-slate-700 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition-all" 
+                />
               </div>
               <div className="space-y-2">
                 <label className="text-sm font-bold ml-1">Email</label>
-                <input type="email" placeholder="john@example.com" className="w-full p-4 rounded-xl bg-slate-50 dark:bg-darkBg border border-slate-200 dark:border-slate-700 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition-all" />
+                <input 
+                  type="email" 
+                  name="email"
+                  placeholder="john@example.com" 
+                  required
+                  className="w-full p-4 rounded-xl bg-slate-50 dark:bg-darkBg border border-slate-200 dark:border-slate-700 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition-all" 
+                />
               </div>
             </div>
             <div className="space-y-2">
               <label className="text-sm font-bold ml-1">Message</label>
-              <textarea rows="4" placeholder="Tell me about your project..." className="w-full p-4 rounded-xl bg-slate-50 dark:bg-darkBg border border-slate-200 dark:border-slate-700 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition-all"></textarea>
+              <textarea 
+                name="message"
+                rows="4" 
+                placeholder="Tell me about your project..." 
+                required
+                className="w-full p-4 rounded-xl bg-slate-50 dark:bg-darkBg border border-slate-200 dark:border-slate-700 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition-all"
+              ></textarea>
             </div>
-            <button className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 rounded-xl flex items-center justify-center gap-2 transition-all shadow-lg shadow-blue-500/25">
-              Send Message <Send size={18} />
+
+            {/* Status Messages */}
+            {status === 'SUCCESS' && (
+              <div className="p-4 bg-green-100 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-xl">
+                <p className="text-green-700 dark:text-green-300 font-medium">✓ Message sent successfully! I'll get back to you soon.</p>
+              </div>
+            )}
+            
+            {status === 'ERROR' && (
+              <div className="p-4 bg-red-100 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-xl">
+                <p className="text-red-700 dark:text-red-300 font-medium">✗ Oops! Something went wrong. Please try again.</p>
+              </div>
+            )}
+
+            <button 
+              type="submit"
+              disabled={isSubmitting}
+              className="w-full bg-blue-600 hover:bg-blue-700 disabled:bg-blue-400 text-white font-bold py-4 rounded-xl flex items-center justify-center gap-2 transition-all shadow-lg shadow-blue-500/25 disabled:cursor-not-allowed"
+            >
+              {isSubmitting ? (
+                <>
+                  <svg className="animate-spin h-5 w-5" viewBox="0 0 24 24">
+                    <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none" />
+                    <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" />
+                  </svg>
+                  Sending...
+                </>
+              ) : (
+                <>
+                  Send Message <Send size={18} />
+                </>
+              )}
             </button>
           </form>
         </motion.div>
