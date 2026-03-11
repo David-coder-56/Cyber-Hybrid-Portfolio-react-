@@ -58,7 +58,7 @@ export const projects = [
   title: "ENGA Website",
   description:
     "A modern, multi-page website for Elite Next Gen Agency (ENGA), a digital agency specializing in event planning and creative solutions. The site features 3D visuals, interactive elements, and dynamic content managed through Sanity CMS, with fully functional contact forms via Formspree. Designed with a focus on aesthetics, usability, and responsive design.",
-  tech: ["React", "Vite", "Sanity CMS", "Formspree", "CSS", "JavaScript"],
+  tech: ["React", "Vite", "Sanity CMS", "Formspree", "Tailwind CSS", "JavaScript"],
   link: "https://enga-website.vercel.app/",
   category: "Web"
 }
