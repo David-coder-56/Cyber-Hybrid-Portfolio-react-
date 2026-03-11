@@ -52,25 +52,34 @@ export const projects = [
     tech: ["Python", "Dash", "Plotly", "Pandas"],
     link: "https://telecom-dashboard-snlx.onrender.com",
     category: "Data Science"
-  }
+  },
+  {
+  id: 7,
+  title: "ENGA Website",
+  description:
+    "A modern, multi-page website for Elite Next Gen Agency (ENGA), a digital agency specializing in event planning and creative solutions. The site features 3D visuals, interactive elements, and dynamic content managed through Sanity CMS, with fully functional contact forms via Formspree. Designed with a focus on aesthetics, usability, and responsive design.",
+  tech: ["React", "Vite", "Sanity CMS", "Formspree", "CSS", "JavaScript"],
+  link: "https://enga-website.vercel.app/",
+  category: "Web"
+}
 ];
 
 
 export const skillCategories = [
   {
     title: "Frontend",
-    skills: ["HTML", "CSS", "JavaScript", "React", "Vite", "Tailwind CSS"]
+    skills: ["HTML", "CSS", "JavaScript", "React", "Vite", "Tailwind CSS", "Next.js", "3D Web Animations"]
   },
   {
     title: "Backend",
-    skills: ["Python", "Node.js", "Express", "SQL", "MongoDB", "Firebase"]
+    skills: ["Python", "Node.js", "Express", "SQL", "MongoDB", "Firebase", "Sanity CMS"]
   },
   {
     title: "Tools",
-    skills: ["Git & GitHub", "Postman", "Figma", "VS Code", "Dash", "Plotly"]
+    skills: ["Git & GitHub", "Postman", "Figma", "VS Code", "Dash", "Plotly", "Formspree", "Vercel", "Netlify"]
   },
   {
     title: "Optional / Misc",
-    skills: ["Arduino", "Networking Basics", "Data Visualization"]
+    skills: ["Arduino", "Networking Basics", "Data Visualization", "IoT Projects", "AI Concepts"]
   }
 ];
