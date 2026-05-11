@@ -70,6 +70,15 @@ export const projects = [
   tech: ["React", "Vite", "Tailwind CSS", "JavaScript"],
   link: "https://mediakingconsultancy.netlify.app/",
   category: "Web"
+},
+{
+  id: 9,
+  title: "Fortune Technical Services Website",
+  description:
+    "A high-performance corporate website for Fortune Technical Services, built to present technical expertise, service offerings, and brand credibility. The site features a sleek UI, responsive layouts, and optimized performance, ensuring seamless navigation and engagement across devices. Designed to support business growth, it provides a strong digital presence and clear client communication channels.",
+  tech: ["React", "Vite", "Tailwind CSS", "JavaScript", "Netlify"],
+  link: "https://fortunetechnicalservices.netlify.app/",
+  category: "Web"
 }
 ];
 
