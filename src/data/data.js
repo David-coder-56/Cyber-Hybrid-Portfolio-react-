@@ -61,6 +61,15 @@ export const projects = [
   tech: ["React", "Vite", "Sanity CMS", "Formspree", "Tailwind CSS", "JavaScript"],
   link: "https://enga-website.vercel.app/",
   category: "Web"
+},
+{
+  id: 8,
+  title: "Media King Consultancy Website",
+  description:
+    "A professional and modern website for Media King Consultancy, showcasing digital services including branding, media strategy, and business consulting. The platform features a clean UI, responsive design, and structured service pages to enhance client engagement. Built with performance and scalability in mind, the site ensures smooth navigation and an intuitive user experience across all devices.",
+  tech: ["React", "Vite", "Tailwind CSS", "JavaScript"],
+  link: "https://mediakingconsultancy.netlify.app/",
+  category: "Web"
 }
 ];
 
