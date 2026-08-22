@@ -12,10 +12,10 @@ export const projects = [
     id: 2,
     title: "Smart Coop System",
     description:
-      "An IoT-powered smart poultry coop system that monitors temperature, feed levels, and movement, with a web dashboard for real-time data and alerts.",
-    tech: ["HTML", "CSS", "JavaScript", "IoT", "Arduino"],
+      "An IoT-powered smart poultry management system designed to monitor environmental conditions, feed levels, and poultry activity, with real-time data monitoring and automated alerts.",
+    tech: ["HTML", "CSS", "JavaScript", "Arduino", "IoT"],
     link: "https://smartcoop.netlify.app/",
-    category: "IoT"
+    category: "IoT",
   },
   {
     id: 3,
