@@ -12,7 +12,7 @@ const Hero = () => {
           transition={{ duration: 0.8 }}
         >
           <span className="text-blue-500 font-mono tracking-widest uppercase text-sm mb-4 block">
-            Software Engineer Student // currently
+            IT Student // Cybersecurity Specialization
           </span>
           
           <h1 className="text-5xl md:text-7xl font-bold mb-2 bg-gradient-to-r from-blue-600 to-cyan-400 bg-clip-text text-transparent">
@@ -39,13 +39,15 @@ const Hero = () => {
           </motion.div>
 
           <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-slate-700 dark:text-slate-300">
-            Software Engineering Student
+            Software Developer & Cybersecurity Specialist
           </h2>
 
           <p className="text-lg text-slate-600 dark:text-slate-400 max-w-xl mb-8 leading-relaxed">
-            I build clean, responsive websites and dynamic applications where 
-            <span className="text-blue-600 dark:text-blue-400 font-semibold"> Cyber Security</span> meets 
-            <span className="text-blue-600 dark:text-blue-400 font-semibold"> Modern Web Engineering with a touch of AI</span>.
+            I build modern, responsive web applications and practical technology
+            solutions with a strong foundation in <span className="text-blue-600 dark:text-blue-400 font-semibold">Software Engineering</span> and a growing
+            specialization in <span className="text-blue-600 dark:text-blue-400 font-semibold">Cybersecurity</span>.
+            I’m passionate about developing secure systems, exploring emerging
+            technologies, and creating solutions that make a real-world impact.
           </p>
           
           <div className="flex flex-wrap gap-4">

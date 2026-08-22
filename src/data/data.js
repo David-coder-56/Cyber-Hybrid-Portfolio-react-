@@ -3,10 +3,10 @@ export const projects = [
     id: 1,
     title: "Personal Portfolio",
     description:
-      "A responsive personal portfolio website featuring light & dark mode, animations, and modern UI.",
-    tech: ["HTML", "CSS", "JavaScript"],
-    link: "https://david-coder-56.github.io/cyber-hybrid-portfolio/",
-    category: "Web"
+      "A modern personal portfolio showcasing my development journey, technical skills, projects, and experience, with responsive design, animations, and light & dark mode.",
+    tech: ["React", "Vite", "Tailwind CSS", "JavaScript", "Framer Motion"],
+    link: "https://cyber-hybrid.netlify.app/",
+    category: "Web Development",
   },
   {
     id: 2,
@@ -19,85 +19,145 @@ export const projects = [
   },
   {
     id: 3,
-    title: "Business Website (Concept)",
+    title: "KIBAL Website",
     description:
-      "A modern website concept designed for NGOs and small businesses with clean layouts and accessibility in mind.",
-    tech: ["HTML", "CSS", "JavaScript"],
-    link: "#",
-    category: "Web"
+      "A modern responsive organizational website developed for KIBAL, featuring information about the organization, services, outreach programs, team members, blog content, and contact functionality.",
+    tech: ["React", "Vite", "Tailwind CSS", "JavaScript"],
+    link: "https://kibal.netlify.app/",
+    category: "Web Development",
   },
   {
     id: 4,
     title: "Student Performance Dashboard",
     description:
-      "An interactive data visualization dashboard built using Python, Dash, and Plotly to analyze student performance.",
-    tech: ["Python", "Dash", "Plotly"],
+      "An interactive data analytics dashboard built with Python, Dash, and Plotly for exploring student performance, identifying trends, and presenting academic insights through dynamic visualizations.",
+    tech: ["Python", "Dash", "Plotly", "Pandas"],
     link: "https://student-performance-dashboard-d0z6.onrender.com",
-    category: "Data Science"
+    category: "Data Science",
   },
   {
     id: 5,
     title: "Cyber Gear Shop",
     description:
-      "A futuristic gaming e-commerce store featuring high-performance gear, cyber-neon visuals, and a fast, optimized shopping experience.",
-    tech: ["React", "Vite", "Tailwind CSS"],
+      "A futuristic e-commerce web application for gaming and technology gear, featuring a cyber-inspired interface, responsive layouts, product presentation, and a modern shopping experience.",
+    tech: ["React", "Vite", "Tailwind CSS", "JavaScript"],
     link: "https://cyber-gear-shop.vercel.app/",
-    category: "Web App"
+    category: "Web App",
   },
   {
     id: 6,
     title: "Telecom Customer Retention Dashboard",
     description:
-      "An interactive analytics dashboard that explores customer churn patterns using real telecom data, featuring KPIs, filters, and multi-level insights.",
+      "An interactive customer analytics dashboard built around telecom churn data, providing KPIs, filtering, visual analysis, and insights into customer retention patterns.",
     tech: ["Python", "Dash", "Plotly", "Pandas"],
     link: "https://telecom-dashboard-snlx.onrender.com",
-    category: "Data Science"
+    category: "Data Science",
   },
   {
-  id: 7,
-  title: "ENGA Website",
-  description:
-    "A modern, multi-page website for Elite Next Gen Agency (ENGA), a digital agency specializing in event planning and creative solutions. The site features 3D visuals, interactive elements, and dynamic content managed through Sanity CMS, with fully functional contact forms via Formspree. Designed with a focus on aesthetics, usability, and responsive design.",
-  tech: ["React", "Vite", "Sanity CMS", "Formspree", "Tailwind CSS", "JavaScript"],
-  link: "https://enga-website.vercel.app/",
-  category: "Web"
-},
-{
-  id: 8,
-  title: "Media King Consultancy Website",
-  description:
-    "A professional and modern website for Media King Consultancy, showcasing digital services including branding, media strategy, and business consulting. The platform features a clean UI, responsive design, and structured service pages to enhance client engagement. Built with performance and scalability in mind, the site ensures smooth navigation and an intuitive user experience across all devices.",
-  tech: ["React", "Vite", "Tailwind CSS", "JavaScript"],
-  link: "https://mediakingconsultancy.netlify.app/",
-  category: "Web"
-},
-{
-  id: 9,
-  title: "Fortune Technical Services Website",
-  description:
-    "A high-performance corporate website for Fortune Technical Services, built to present technical expertise, service offerings, and brand credibility. The site features a sleek UI, responsive layouts, and optimized performance, ensuring seamless navigation and engagement across devices. Designed to support business growth, it provides a strong digital presence and clear client communication channels.",
-  tech: ["React", "Vite", "Tailwind CSS", "JavaScript", "Netlify"],
-  link: "https://fortunetechnicalservices.netlify.app/",
-  category: "Web"
-}
+    id: 7,
+    title: "ENGA Website",
+    description:
+      "A modern multi-page website for Elite Next Gen Agency (ENGA), a digital agency focused on event planning and creative solutions. The platform combines responsive design, interactive 3D elements, dynamic content management, and functional contact forms.",
+    tech: [
+      "React",
+      "Vite",
+      "Tailwind CSS",
+      "Sanity CMS",
+      "Formspree",
+      "JavaScript",
+    ],
+    link: "https://enga-website.vercel.app/",
+    category: "Web Development",
+  },
+  {
+    id: 8,
+    title: "Media King Consultancy Website",
+    description:
+      "A professional business website developed for Media King Consultancy to showcase its branding, media strategy, and consulting services through a responsive interface and structured service presentation.",
+    tech: ["React", "Vite", "Tailwind CSS", "JavaScript"],
+    link: "https://mediakingconsultancy.netlify.app/",
+    category: "Web Development",
+  },
+  {
+    id: 9,
+    title: "Fortune Technical Services Website",
+    description:
+      "A professional corporate website developed for Fortune Technical Services to showcase its technical services, expertise, and business information through a responsive, performance-focused digital presence.",
+    tech: ["React", "Vite", "Tailwind CSS", "JavaScript", "Netlify"],
+    link: "https://fortunetechnicalservices.netlify.app/",
+    category: "Web Development",
+  },
 ];
-
 
 export const skillCategories = [
   {
     title: "Frontend",
-    skills: ["HTML", "CSS", "JavaScript", "React", "Vite", "Tailwind CSS", "Next.js", "3D Web Animations"]
+    skills: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React",
+      "Vite",
+      "Tailwind CSS",
+      "Next.js",
+      "Framer Motion",
+      "Responsive Design",
+      "3D Web Animations",
+    ],
   },
   {
     title: "Backend",
-    skills: ["Python", "Node.js", "Express", "SQL", "MongoDB", "Firebase", "Sanity CMS"]
+    skills: [
+      "Node.js",
+      "Express.js",
+      "Python",
+      "SQL",
+      "MongoDB",
+      "PostgreSQL",
+      "Firebase",
+      "REST APIs",
+      "Sanity CMS",
+    ],
   },
   {
-    title: "Tools",
-    skills: ["Git & GitHub", "Postman", "Figma", "VS Code", "Dash", "Plotly", "Formspree", "Vercel", "Netlify"]
+    title: "Data & Analytics",
+    skills: [
+      "Python",
+      "Pandas",
+      "Dash",
+      "Plotly",
+      "Data Visualization",
+      "Data Analysis",
+    ],
   },
   {
-    title: "Optional / Misc",
-    skills: ["Arduino", "Networking Basics", "Data Visualization", "IoT Projects", "AI Concepts"]
-  }
+    title: "Tools & Platforms",
+    skills: [
+      "Git",
+      "GitHub",
+      "Postman",
+      "Figma",
+      "VS Code",
+      "Docker",
+      "Vercel",
+      "Netlify",
+      "Render",
+      "Formspree",
+    ],
+  },
+  {
+    title: "Cybersecurity & Systems",
+    skills: [
+      "Cybersecurity Fundamentals",
+      "Networking Basics",
+      "API Security Concepts",
+      "Authentication",
+      "Database Security Concepts",
+      "IoT Security Concepts",
+    ],
+  },
+  {
+    title: "IoT & Emerging Technology",
+    skills: ["Arduino", "IoT Projects", "Hardware Integration", "AI Concepts"],
+  },
 ];
