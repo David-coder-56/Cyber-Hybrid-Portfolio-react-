@@ -1,63 +1,85 @@
+
+/* =========================================================
+   CYBER HYBRID — PORTFOLIO DATA
+   Verified against the information currently provided.
+   Unknown dates, credentials, and achievements are not invented.
+   ========================================================= */
+
+// ─── Projects ─────────────────────────────────────────────
+
 export const projects = [
   {
     id: 1,
     title: "Personal Portfolio",
     description:
-      "A modern personal portfolio showcasing my development journey, technical skills, projects, and experience, with responsive design, animations, and light & dark mode.",
+      "My personal developer portfolio showcasing my projects, technical skills, education, and professional journey through a responsive interface with animations and light and dark modes.",
     tech: ["React", "Vite", "Tailwind CSS", "JavaScript", "Framer Motion"],
     link: "https://cyber-hybrid.netlify.app/",
     category: "Web Development",
+    type: "Personal Project",
+    status: "Active",
   },
   {
     id: 2,
     title: "Smart Coop System",
     description:
-      "An IoT-powered smart poultry management system designed to monitor environmental conditions, feed levels, and poultry activity, with real-time data monitoring and automated alerts.",
+      "An IoT-based poultry management project designed to monitor environmental conditions, feed levels, and poultry activity using hardware integration and a web dashboard. The project received a reported second-place award.",
     tech: ["HTML", "CSS", "JavaScript", "Arduino", "IoT"],
     link: "https://smartcoop.netlify.app/",
     category: "IoT",
+    type: "Organization / Client Project",
+    status: "Completed",
+    achievement: "Second-place award reported; competition details pending",
   },
   {
     id: 3,
     title: "KIBAL Website",
     description:
-      "A modern responsive organizational website developed for KIBAL, featuring information about the organization, services, outreach programs, team members, blog content, and contact functionality.",
+      "A responsive organizational website presenting KIBAL's information, services, outreach programs, team, blog content, and contact options.",
     tech: ["React", "Vite", "Tailwind CSS", "JavaScript"],
     link: "https://kibal.netlify.app/",
     category: "Web Development",
+    type: "Organization / Client Project",
+    status: "Built",
   },
   {
     id: 4,
     title: "Student Performance Dashboard",
     description:
-      "An interactive data analytics dashboard built with Python, Dash, and Plotly for exploring student performance, identifying trends, and presenting academic insights through dynamic visualizations.",
+      "A data analytics demonstration built with Python, Dash, and Plotly to explore student performance, visualize academic trends, and present insights through interactive charts.",
     tech: ["Python", "Dash", "Plotly", "Pandas"],
     link: "https://student-performance-dashboard-d0z6.onrender.com",
     category: "Data Science",
+    type: "Demo Project",
+    status: "Demo",
   },
   {
     id: 5,
     title: "Cyber Gear Shop",
     description:
-      "A futuristic e-commerce web application for gaming and technology gear, featuring a cyber-inspired interface, responsive layouts, product presentation, and a modern shopping experience.",
+      "A cyber-inspired e-commerce demonstration showcasing gaming and technology products through a modern, responsive shopping interface.",
     tech: ["React", "Vite", "Tailwind CSS", "JavaScript"],
     link: "https://cyber-gear-shop.vercel.app/",
     category: "Web App",
+    type: "Demo Project",
+    status: "Demo",
   },
   {
     id: 6,
     title: "Telecom Customer Retention Dashboard",
     description:
-      "An interactive customer analytics dashboard built around telecom churn data, providing KPIs, filtering, visual analysis, and insights into customer retention patterns.",
+      "A data analytics demonstration using telecom churn data to explore customer retention patterns through KPIs, filters, charts, and interactive visualizations.",
     tech: ["Python", "Dash", "Plotly", "Pandas"],
     link: "https://telecom-dashboard-snlx.onrender.com",
     category: "Data Science",
+    type: "Demo Project",
+    status: "Demo",
   },
   {
     id: 7,
     title: "ENGA Website",
     description:
-      "A modern multi-page website for Elite Next Gen Agency (ENGA), a digital agency focused on event planning and creative solutions. The platform combines responsive design, interactive 3D elements, dynamic content management, and functional contact forms.",
+      "A multi-page website for Elite Next Gen Agency, focused on event planning and creative services. The project includes responsive layouts and integrations for content management and contact forms; development is not yet complete.",
     tech: [
       "React",
       "Vite",
@@ -68,218 +90,232 @@ export const projects = [
     ],
     link: "https://enga-website.vercel.app/",
     category: "Web Development",
+    type: "Client / Agency Project",
+    status: "In Progress",
   },
   {
     id: 8,
     title: "Media King Consultancy Website",
     description:
-      "A professional business website developed for Media King Consultancy to showcase its branding, media strategy, and consulting services through a responsive interface and structured service presentation.",
+      "A professional business website developed for Media King Consultancy to present its branding, media strategy, consulting services, and business information.",
     tech: ["React", "Vite", "Tailwind CSS", "JavaScript"],
     link: "https://mediakingconsultancy.netlify.app/",
     category: "Web Development",
+    type: "Client Project",
+    status: "Built",
   },
   {
     id: 9,
     title: "Fortune Technical Services Website",
     description:
-      "A professional corporate website developed for Fortune Technical Services to showcase its technical services, expertise, and business information through a responsive, performance-focused digital presence.",
-    tech: ["React", "Vite", "Tailwind CSS", "JavaScript", "Netlify"],
+      "A corporate website developed for Fortune Technical Services to present its technical services, expertise, and business information through a responsive digital presence.",
+    tech: ["React", "Vite", "Tailwind CSS", "JavaScript"],
     link: "https://fortunetechnicalservices.netlify.app/",
     category: "Web Development",
+    type: "Client Project",
+    status: "Built",
   },
 ];
 
-// ─── Certificates ────────────────────────────────────────────────────────────
+// ─── Certificates and Diplomas ────────────────────────────
+// Only include credentials that the user reports having earned.
+// Exact issuing details and completion dates still need confirmation.
+
 export const certificates = [
   {
     id: 1,
-    name: 'Responsive Web Design',
-    issuer: 'freeCodeCamp',
-    year: '2023',
-    category: 'Development',
-    emoji: '🎨',
-    verified: true,
-    credlyUrl: 'https://www.freecodecamp.org/certification/David-coder-56/responsive-web-design',
+    name: "Data Science Diploma",
+    issuer: "Rhotel Digital & Innovation Hub",
+    year: null,
+    category: "Data Science",
+    verified: false,
+    credentialUrl: null,
   },
   {
     id: 2,
-    name: 'JavaScript Algorithms & Data Structures',
-    issuer: 'freeCodeCamp',
-    year: '2023',
-    category: 'Development',
-    emoji: '⚡',
-    verified: true,
-    credlyUrl: 'https://www.freecodecamp.org/certification/David-coder-56/javascript-algorithms-and-data-structures',
+    name: "Full-Stack Web Development Diploma",
+    issuer: "Rhotel Digital & Innovation Hub",
+    year: null,
+    category: "Development",
+    verified: false,
+    credentialUrl: null,
   },
   {
     id: 3,
-    name: 'Introduction to Cybersecurity',
-    issuer: 'Cisco Networking Academy',
-    year: '2024',
-    category: 'Security',
-    emoji: '🛡️',
-    verified: true,
-    credlyUrl: '#',
-  },
-  {
-    id: 4,
-    name: 'Python for Everybody',
-    issuer: 'Coursera / University of Michigan',
-    year: '2024',
-    category: 'Development',
-    emoji: '🐍',
-    verified: true,
-    credlyUrl: '#',
-  },
-  {
-    id: 5,
-    name: 'CompTIA Security+',
-    issuer: 'CompTIA',
-    year: '2025',
-    category: 'Security',
-    emoji: '🔐',
+    name: "Introduction to Computer Certificate",
+    issuer: "Rhotel Digital & Innovation Hub",
+    year: null,
+    category: "IT Fundamentals",
     verified: false,
-    progress: 35,
-  },
-  {
-    id: 6,
-    name: 'Google Cybersecurity Certificate',
-    issuer: 'Google / Coursera',
-    year: '2025',
-    category: 'Security',
-    emoji: '🔵',
-    verified: false,
-    progress: 60,
+    credentialUrl: null,
   },
 ];
 
-// ─── CTF Challenges ───────────────────────────────────────────────────────────
-export const ctfChallenges = [
+// ─── Courses and Independent Learning ─────────────────────
+// These entries describe learning, not necessarily earned certificates.
+
+export const learningItems = [
   {
     id: 1,
-    name: 'Basic Pentesting',
-    platform: 'TryHackMe',
-    difficulty: 'Easy',
-    vector: 'Web Exploitation',
-    os: 'Linux',
-    tags: ['enumeration', 'ssh', 'privilege-escalation'],
-    solved: true,
-    writeupUrl: '#',
+    name: "Introduction to Cybersecurity",
+    provider: "BlueCrest coursework and independent study",
+    category: "Cybersecurity",
+    status: "Course completed",
+    credentialUrl: null,
   },
   {
     id: 2,
-    name: 'OWASP Top 10',
-    platform: 'TryHackMe',
-    difficulty: 'Easy',
-    vector: 'Web Exploitation',
-    os: 'Linux',
-    tags: ['injection', 'XSS', 'IDOR', 'SSRF'],
-    solved: true,
-    writeupUrl: '#',
+    name: "Python",
+    provider: "Rhotel digital hub and independent study",
+    category: "Programming",
+    status: "Course studied",
+    credentialUrl: null,
   },
   {
     id: 3,
-    name: 'Pickle Rick',
-    platform: 'TryHackMe',
-    difficulty: 'Easy',
-    vector: 'Web Exploitation',
-    os: 'Linux',
-    tags: ['web', 'command-injection', 'ctf'],
-    solved: true,
-    writeupUrl: '#',
+    name: "Claude 101",
+    provider: "Claude",
+    category: "AI Tools",
+    status: "Studied",
+    credentialUrl: null,
   },
   {
     id: 4,
-    name: 'Network Services',
-    platform: 'TryHackMe',
-    difficulty: 'Medium',
-    vector: 'Network',
-    os: 'Linux',
-    tags: ['SMB', 'Telnet', 'FTP', 'NFS'],
-    solved: true,
-    writeupUrl: '#',
+    name: "Home Network Security",
+    description:
+      "Independent learning about securing Wi-Fi networks, routers, and smart devices.",
+    provider: "Independent learning and cursa",
+    category: "Cybersecurity",
+    status: "Studied",
+    credentialUrl: null,
   },
   {
     id: 5,
-    name: 'Mr Robot CTF',
-    platform: 'TryHackMe',
-    difficulty: 'Medium',
-    vector: 'Web Exploitation',
-    os: 'Linux',
-    tags: ['wordlist', 'hydra', 'privilege-escalation'],
-    solved: false,
-    writeupUrl: null,
+    name: "Flutter for Beginners",
+    provider: "Coursa",
+    category: "Mobile Development",
+    status: "Studied",
+    credentialUrl: null,
   },
   {
     id: 6,
-    name: 'Digital Forensics',
-    platform: 'PicoCTF',
-    difficulty: 'Easy',
-    vector: 'Forensics',
-    os: null,
-    tags: ['steganography', 'file-analysis', 'metadata'],
-    solved: true,
-    writeupUrl: '#',
+    name: "Cybersecurity Fundamentals",
+    provider: "BlueCrest coursework and independent study",
+    category: "Cybersecurity",
+    status: "Ongoing learning",
+    credentialUrl: null,
+  },
+  {
+    id: 7,
+    name: "Networking Fundamentals",
+    provider: "BlueCrest coursework and independent study",
+    category: "Networking",
+    status: "Ongoing learning",
+    credentialUrl: null,
   },
 ];
 
-// ─── Timeline ─────────────────────────────────────────────────────────────────
+// ─── CTF Challenges ───────────────────────────────────────
+// No individual challenge completions are currently verified
+// for publication. Add entries only after confirming them.
+
+export const ctfChallenges = [];
+
+// ─── Experience and Education Timeline ────────────────────
+
 export const timelineItems = [
   {
     id: 1,
-    type: 'work',
-    title: 'Coding Intern',
-    org: 'Rhotel Digital & Innovation Hub',
-    date: '2024 – Present',
+    type: "work",
+    title: "IT Intern — Yellow Scholars",
+    org: "Lonestar Cell MTN",
+    date: "Oct 13, 2026",
     description:
-      'Working on real-world web development projects, collaborating with a dev team, strengthening my workflow in React and full-stack development, and approaching technology from both a development and business perspective.',
-    tags: ['React', 'Node.js', 'MongoDB', 'Tailwind CSS'],
+      "Internship in the IT department through the Yellow Scholars program. Currently gaining exposure to IT operations and technical work.",
+    tags: ["IT Support", "Information Technology"],
+    status: "Current",
+    endDateExpected: true,
   },
   {
     id: 2,
-    type: 'education',
-    title: 'BSc Information Technology',
-    org: 'BlueCrest University College',
-    date: 'Semester 5 · Present',
+    type: "work",
+    title: "Branding and Curriculum Assistant",
+    org: "Orange Digital Center (ODC)",
+    date: "February – September 2026",
     description:
-      'Pursuing a Bachelor\'s degree in Information Technology with a specialization in Cybersecurity — covering networking, secure systems, web development, databases, and emerging technologies.',
-    tags: ['Cybersecurity', 'Networking', 'Software Engineering'],
+      "Supported Coding School programs through curriculum and certificate tracking, program coordination, participant recruitment, teaching Snap programming and assisting with Python sessions, project judging, hardware organization, and branding activities.",
+    tags: [
+      "Program Coordination",
+      "Curriculum Support",
+      "Snap",
+      "Python",
+      "Branding",
+    ],
+    status: "Completed",
   },
   {
     id: 3,
-    type: 'project',
-    title: 'Technical Lead — Smart Coop System',
-    org: 'University IoT Project',
-    date: '2024',
+    type: "training",
+    title: "Technical Training and Project Development",
+    org: "Rhotel Digital & Innovation Hub",
+    date: "Since approximately 2024",
     description:
-      'Led the technical design and development of an IoT-based smart poultry management system — integrating Arduino sensors, real-time monitoring, automated alerts, and a web dashboard for environmental management.',
-    tags: ['IoT', 'Arduino', 'JavaScript', 'Hardware Integration'],
+      "Developing practical skills through training and project work in full-stack web development, Python, data analysis, databases, and related technologies. Continues to visit occasionally for learning and guidance.",
+    tags: [
+      "Full-Stack Development",
+      "Python",
+      "Data Science",
+      "Databases",
+    ],
+    status: "Occasional participation",
   },
   {
     id: 4,
-    type: 'education',
-    title: 'Cybersecurity Specialization',
-    org: 'Cisco Networking Academy',
-    date: '2024',
+    type: "education",
+    title: "BSc Information Technology",
+    org: "BlueCrest University College",
+    date: "Fifth Semester · Expected graduation 2028",
     description:
-      'Completed the Introduction to Cybersecurity course, learning about network vulnerabilities, attack vectors, security tools, and best practices for securing systems and infrastructure.',
-    tags: ['Network Security', 'Threat Analysis', 'Cisco'],
+      "Pursuing a Bachelor of Science in Information Technology with a specialization in Cybersecurity. University learning includes programming, databases, networking, and cybersecurity-related coursework.",
+    tags: [
+      "Cybersecurity",
+      "Networking",
+      "Java",
+      "C++",
+      "Database Systems",
+    ],
+    status: "In Progress",
   },
   {
     id: 5,
-    type: 'work',
-    title: 'Freelance Web Developer',
-    org: 'Independent Projects',
-    date: '2023 – Present',
+    type: "project",
+    title: "Smart Coop System",
+    org: "IoT Project",
+    date: "2024",
     description:
-      'Designed and delivered full-stack web applications for multiple clients — including an agency website (ENGA), a consultancy site (Media King), and a corporate platform (Fortune Technical Services).',
-    tags: ['React', 'Vite', 'Tailwind', 'Sanity CMS'],
+      "Worked on an IoT-based poultry management solution combining hardware integration, environmental monitoring concepts, and a web dashboard. A second-place award has been reported; competition details are not yet confirmed.",
+    tags: ["Arduino", "IoT", "JavaScript", "Hardware Integration"],
+    status: "Completed",
+  },
+  {
+    id: 6,
+    type: "work",
+    title: "Independent Web Development",
+    org: "Client and Personal Projects",
+    date: "Dates vary by project",
+    description:
+      "Building websites and web applications for organizations, clients, and personal demonstrations using modern frontend technologies and selected backend and content-management tools.",
+    tags: ["React", "Vite", "Tailwind CSS", "JavaScript"],
+    status: "Project-based",
   },
 ];
 
+// ─── Technical Skills ─────────────────────────────────────
+
 export const skillCategories = [
   {
-    title: "Frontend",
+    title: "Frontend Development",
+    level: "Intermediate to Advanced",
     skills: [
       "HTML",
       "CSS",
@@ -287,65 +323,128 @@ export const skillCategories = [
       "React",
       "Vite",
       "Tailwind CSS",
-      "Next.js",
-      "Framer Motion",
       "Responsive Design",
-      "3D Web Animations",
+      "Framer Motion",
     ],
   },
   {
-    title: "Backend",
+    title: "Backend Development",
+    level: "Intermediate",
     skills: [
       "Node.js",
       "Express.js",
-      "Python",
-      "SQL",
-      "MongoDB",
-      "PostgreSQL",
-      "Firebase",
       "REST APIs",
-      "Sanity CMS",
+      "Authentication Concepts",
+      "MongoDB",
+      "SQL",
+      "Database Integration",
     ],
   },
   {
-    title: "Data & Analytics",
+    title: "Programming Languages",
+    level: "Mixed",
+    skills: [
+      "Python — Intermediate",
+      "JavaScript — Intermediate",
+      "C++ — Beginner",
+      "Java — Beginner",
+    ],
+  },
+  {
+    title: "Data Science and Analytics",
+    level: "Intermediate",
     skills: [
       "Python",
       "Pandas",
       "Dash",
       "Plotly",
-      "Data Visualization",
       "Data Analysis",
+      "Data Visualization",
     ],
   },
   {
-    title: "Tools & Platforms",
+    title: "Cybersecurity and Networking",
+    level: "Currently Learning",
+    skills: [
+      "Cybersecurity Fundamentals",
+      "Network Security Concepts",
+      "Home Network Security",
+      "Networking Fundamentals",
+      "API Security Concepts",
+      "Database Security Concepts",
+    ],
+  },
+  {
+    title: "Systems and Mobile Development",
+    level: "Currently Learning",
+    skills: [
+      "Linux Fundamentals",
+      "Flutter",
+      "Dart",
+      "IT Fundamentals",
+    ],
+  },
+  {
+    title: "Tools and Platforms",
+    level: "Intermediate",
     skills: [
       "Git",
       "GitHub",
       "Postman",
-      "Figma",
       "VS Code",
+      "Figma",
       "Docker",
       "Vercel",
       "Netlify",
       "Render",
+      "Sanity CMS",
       "Formspree",
     ],
   },
   {
-    title: "Cybersecurity & Systems",
+    title: "IoT and Emerging Technology",
+    level: "Project Experience",
     skills: [
-      "Cybersecurity Fundamentals",
-      "Networking Basics",
-      "API Security Concepts",
-      "Authentication",
-      "Database Security Concepts",
-      "IoT Security Concepts",
+      "Arduino",
+      "IoT Concepts",
+      "Hardware Integration",
+      "AI Tools",
     ],
   },
-  {
-    title: "IoT & Emerging Technology",
-    skills: ["Arduino", "IoT Projects", "Hardware Integration", "AI Concepts"],
-  },
 ];
+
+// ─── Profile Summary ─────────────────────────────────────
+
+export const profile = {
+  name: "David D. Bankole",
+  brand: "Cyber Hybrid",
+  title: "IT Student | Web Developer | Cybersecurity Learner",
+  education: "BSc Information Technology",
+  institution: "BlueCrest University College",
+  specialization: "Cybersecurity",
+  semester: "Fifth Semester",
+  expectedGraduation: "2028",
+  location: "Liberia",
+  summary:
+    "Information Technology student specializing in Cybersecurity, with hands-on experience building responsive websites, web applications, and data dashboards. Currently developing practical skills in cybersecurity, networking, programming, and IT operations while gaining professional experience through internships and project-based work.",
+  interests: [
+    "Cybersecurity",
+    "Web Development",
+    "IT Operations",
+    "Data Analytics",
+    "Emerging Technologies",
+  ],
+  portfolioUrl: "https://cyber-hybrid.netlify.app/",
+  githubUrl: "https://github.com/David-coder-56",
+};
+
+// ─── Important Implementation Notes ───────────────────────
+// 1. Remove any old hardcoded certificate or CTF entries from
+//    components that do not use these exports.
+// 2. Verify that the portfolio UI supports null years and URLs.
+// 3. The old project URLs are retained from your supplied data;
+//    their current availability has not been independently tested.
+// 4. Keep the Lonestar internship end date labelled "Expected"
+//    until the internship is completed.
+// 5. Certificate issuer and completion details should be checked
+//    against the actual documents before displaying "Verified".
