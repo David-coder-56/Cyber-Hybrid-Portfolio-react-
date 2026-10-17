@@ -1,11 +1,11 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from "react";
 
 const BackgroundCanvas = ({ darkMode }) => {
   const canvasRef = useRef(null);
 
   useEffect(() => {
     const canvas = canvasRef.current;
-    const ctx = canvas.getContext('2d');
+    const ctx = canvas.getContext("2d");
     let animationFrameId;
 
     let particles = [];
@@ -16,7 +16,7 @@ const BackgroundCanvas = ({ darkMode }) => {
       canvas.height = window.innerHeight;
     };
 
-    window.addEventListener('resize', resize);
+    window.addEventListener("resize", resize);
     resize();
 
     class Particle {
@@ -42,24 +42,23 @@ const BackgroundCanvas = ({ darkMode }) => {
       }
 
       draw() {
-  // If light mode and color not set yet, assign a random color
-  if (!darkMode && !this.lightColor) {
-    const r = Math.floor(Math.random() * 256);
-    const g = Math.floor(Math.random() * 256);
-    const b = Math.floor(Math.random() * 256);
-    this.lightColor = `rgba(${r}, ${g}, ${b}, ${this.opacity})`;
-  }
+        // If light mode and color not set yet, assign a random color
+        if (!darkMode && !this.lightColor) {
+          const r = Math.floor(Math.random() * 256);
+          const g = Math.floor(Math.random() * 256);
+          const b = Math.floor(Math.random() * 256);
+          this.lightColor = `rgba(${r}, ${g}, ${b}, ${this.opacity})`;
+        }
 
-  // Set fill style based on theme
-  ctx.fillStyle = darkMode
-    ? `rgba(56, 189, 248, ${this.opacity})` // dark mode color
-    : this.lightColor;                     // random light mode color
+        // Set fill style based on theme
+        ctx.fillStyle = darkMode
+          ? `rgba(56, 189, 248, ${this.opacity})` // dark mode color
+          : this.lightColor; // random light mode color
 
-  ctx.beginPath();
-  ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-  ctx.fill();
-}
-
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+        ctx.fill();
+      }
     }
 
     for (let i = 0; i < particleCount; i++) {
@@ -78,7 +77,7 @@ const BackgroundCanvas = ({ darkMode }) => {
     animate();
 
     return () => {
-      window.removeEventListener('resize', resize);
+      window.removeEventListener("resize", resize);
       cancelAnimationFrame(animationFrameId);
     };
   }, [darkMode]);

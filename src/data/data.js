@@ -89,6 +89,194 @@ export const projects = [
   },
 ];
 
+// ─── Certificates ────────────────────────────────────────────────────────────
+export const certificates = [
+  {
+    id: 1,
+    name: 'Responsive Web Design',
+    issuer: 'freeCodeCamp',
+    year: '2023',
+    category: 'Development',
+    emoji: '🎨',
+    verified: true,
+    credlyUrl: 'https://www.freecodecamp.org/certification/David-coder-56/responsive-web-design',
+  },
+  {
+    id: 2,
+    name: 'JavaScript Algorithms & Data Structures',
+    issuer: 'freeCodeCamp',
+    year: '2023',
+    category: 'Development',
+    emoji: '⚡',
+    verified: true,
+    credlyUrl: 'https://www.freecodecamp.org/certification/David-coder-56/javascript-algorithms-and-data-structures',
+  },
+  {
+    id: 3,
+    name: 'Introduction to Cybersecurity',
+    issuer: 'Cisco Networking Academy',
+    year: '2024',
+    category: 'Security',
+    emoji: '🛡️',
+    verified: true,
+    credlyUrl: '#',
+  },
+  {
+    id: 4,
+    name: 'Python for Everybody',
+    issuer: 'Coursera / University of Michigan',
+    year: '2024',
+    category: 'Development',
+    emoji: '🐍',
+    verified: true,
+    credlyUrl: '#',
+  },
+  {
+    id: 5,
+    name: 'CompTIA Security+',
+    issuer: 'CompTIA',
+    year: '2025',
+    category: 'Security',
+    emoji: '🔐',
+    verified: false,
+    progress: 35,
+  },
+  {
+    id: 6,
+    name: 'Google Cybersecurity Certificate',
+    issuer: 'Google / Coursera',
+    year: '2025',
+    category: 'Security',
+    emoji: '🔵',
+    verified: false,
+    progress: 60,
+  },
+];
+
+// ─── CTF Challenges ───────────────────────────────────────────────────────────
+export const ctfChallenges = [
+  {
+    id: 1,
+    name: 'Basic Pentesting',
+    platform: 'TryHackMe',
+    difficulty: 'Easy',
+    vector: 'Web Exploitation',
+    os: 'Linux',
+    tags: ['enumeration', 'ssh', 'privilege-escalation'],
+    solved: true,
+    writeupUrl: '#',
+  },
+  {
+    id: 2,
+    name: 'OWASP Top 10',
+    platform: 'TryHackMe',
+    difficulty: 'Easy',
+    vector: 'Web Exploitation',
+    os: 'Linux',
+    tags: ['injection', 'XSS', 'IDOR', 'SSRF'],
+    solved: true,
+    writeupUrl: '#',
+  },
+  {
+    id: 3,
+    name: 'Pickle Rick',
+    platform: 'TryHackMe',
+    difficulty: 'Easy',
+    vector: 'Web Exploitation',
+    os: 'Linux',
+    tags: ['web', 'command-injection', 'ctf'],
+    solved: true,
+    writeupUrl: '#',
+  },
+  {
+    id: 4,
+    name: 'Network Services',
+    platform: 'TryHackMe',
+    difficulty: 'Medium',
+    vector: 'Network',
+    os: 'Linux',
+    tags: ['SMB', 'Telnet', 'FTP', 'NFS'],
+    solved: true,
+    writeupUrl: '#',
+  },
+  {
+    id: 5,
+    name: 'Mr Robot CTF',
+    platform: 'TryHackMe',
+    difficulty: 'Medium',
+    vector: 'Web Exploitation',
+    os: 'Linux',
+    tags: ['wordlist', 'hydra', 'privilege-escalation'],
+    solved: false,
+    writeupUrl: null,
+  },
+  {
+    id: 6,
+    name: 'Digital Forensics',
+    platform: 'PicoCTF',
+    difficulty: 'Easy',
+    vector: 'Forensics',
+    os: null,
+    tags: ['steganography', 'file-analysis', 'metadata'],
+    solved: true,
+    writeupUrl: '#',
+  },
+];
+
+// ─── Timeline ─────────────────────────────────────────────────────────────────
+export const timelineItems = [
+  {
+    id: 1,
+    type: 'work',
+    title: 'Coding Intern',
+    org: 'Rhotel Digital & Innovation Hub',
+    date: '2024 – Present',
+    description:
+      'Working on real-world web development projects, collaborating with a dev team, strengthening my workflow in React and full-stack development, and approaching technology from both a development and business perspective.',
+    tags: ['React', 'Node.js', 'MongoDB', 'Tailwind CSS'],
+  },
+  {
+    id: 2,
+    type: 'education',
+    title: 'BSc Information Technology',
+    org: 'BlueCrest University College',
+    date: 'Semester 5 · Present',
+    description:
+      'Pursuing a Bachelor\'s degree in Information Technology with a specialization in Cybersecurity — covering networking, secure systems, web development, databases, and emerging technologies.',
+    tags: ['Cybersecurity', 'Networking', 'Software Engineering'],
+  },
+  {
+    id: 3,
+    type: 'project',
+    title: 'Technical Lead — Smart Coop System',
+    org: 'University IoT Project',
+    date: '2024',
+    description:
+      'Led the technical design and development of an IoT-based smart poultry management system — integrating Arduino sensors, real-time monitoring, automated alerts, and a web dashboard for environmental management.',
+    tags: ['IoT', 'Arduino', 'JavaScript', 'Hardware Integration'],
+  },
+  {
+    id: 4,
+    type: 'education',
+    title: 'Cybersecurity Specialization',
+    org: 'Cisco Networking Academy',
+    date: '2024',
+    description:
+      'Completed the Introduction to Cybersecurity course, learning about network vulnerabilities, attack vectors, security tools, and best practices for securing systems and infrastructure.',
+    tags: ['Network Security', 'Threat Analysis', 'Cisco'],
+  },
+  {
+    id: 5,
+    type: 'work',
+    title: 'Freelance Web Developer',
+    org: 'Independent Projects',
+    date: '2023 – Present',
+    description:
+      'Designed and delivered full-stack web applications for multiple clients — including an agency website (ENGA), a consultancy site (Media King), and a corporate platform (Fortune Technical Services).',
+    tags: ['React', 'Vite', 'Tailwind', 'Sanity CMS'],
+  },
+];
+
 export const skillCategories = [
   {
     title: "Frontend",
