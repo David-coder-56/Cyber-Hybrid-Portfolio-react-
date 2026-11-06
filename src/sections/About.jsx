@@ -29,18 +29,18 @@ const About = () => {
             <p>
               I’m currently a <strong>Semester 5 IT student at BlueCrest University</strong>,
               where I chose <strong>Cybersecurity</strong> as my area of specialization.
-              Alongside my studies, I’ve gained practical industry experience working as a
-              <strong> Coding Intern at Rhotel Digital & Innovation Hub</strong>, where I’ve
-              worked on real-world projects, strengthened my development workflow, and
-              learned to approach technology from both a development and problem-solving perspective.
+              Alongside my academic studies, I am gaining industry experience as an
+              <strong> IT Intern at Lonestar Cell MTN</strong> through the Yellow Scholars program,
+              while continuously strengthening my software development, data analytics, and technical skills
+              through comprehensive project-driven training with <strong>Rhotel Digital & Innovation Hub</strong>.
             </p>
 
             <p>
-              I enjoy turning ideas into functional products, from modern web applications
-              and dashboards to systems that combine software with hardware. Some of my
-              projects include the <strong>Smart Coop System</strong>, where I served as
-              Technical Lead, as well as full-stack applications, data dashboards, and
-              other technology-driven projects.
+              I enjoy turning ideas into functional, secure products — from modern web applications
+              and organizational platforms to data dashboards and IoT hardware solutions. Some of my
+              notable works include the <strong>Smart Coop System</strong>, nonprofit and enterprise redesigns
+              such as <strong>VAAFD</strong> and <strong>Sun Star Green Energy</strong>, analytical dashboards,
+              and mobile applications like <strong>Game Vault</strong>.
             </p>
 
             <p>
@@ -57,7 +57,7 @@ const About = () => {
               <p className="text-sm font-medium uppercase tracking-wider opacity-60">Semester</p>
             </div>
             <div className="p-6 rounded-2xl bg-cyan-500/5 border border-cyan-500/10">
-              <h4 className="text-3xl font-bold text-cyan-500 mb-1">10+</h4>
+              <h4 className="text-3xl font-bold text-cyan-500 mb-1">12+</h4>
               <p className="text-sm font-medium uppercase tracking-wider opacity-60">Projects Built</p>
             </div>
           </div>
@@ -71,9 +71,10 @@ const About = () => {
           <h3 className="text-xl font-bold mb-6">Experience & Education</h3>
           <div className="space-y-8">
             {[
-              { title: "BlueCrest University", role: "BSc Information Technology — Cybersecurity Specialization", date: "Semester 5 • Present" },
-              { title: "Rhotel Digital & Innovation Hub", role: "Coding Intern", date: "2024 - Present" },
-              { title: "Smart Coop System", role: "Technical Lead — IoT Project", date: "Project Experience" }
+              { title: "Lonestar Cell MTN", role: "IT Intern — Yellow Scholars Program", date: "Oct 2026 — Present" },
+              { title: "BlueCrest University College", role: "BSc Information Technology (Cybersecurity)", date: "Semester 5 • Expected 2028" },
+              { title: "Rhotel Digital & Innovation Hub", role: "Technical Training & Practical Development", date: "Since ~2024" },
+              { title: "Smart Coop System", role: "IoT Hardware & Dashboard Development", date: "Award-Recognized Project" }
             ].map((item, i) => (
               <div key={i} className="flex gap-4 relative">
                 <div className="w-1 bg-blue-500 rounded-full h-12"></div>

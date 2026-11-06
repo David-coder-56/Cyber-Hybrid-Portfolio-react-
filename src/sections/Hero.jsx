@@ -61,8 +61,8 @@ const Hero = () => {
             <TypeAnimation
               sequence={[
                 'Software Developer',       1800,
-                'Cybersecurity Specialist',  1800,
-                'Full-Stack Engineer',       1800,
+                'Cybersecurity Student',     1800,
+                'Full-Stack Developer',     1800,
                 'IoT Builder',               1800,
               ]}
               wrapper="span"

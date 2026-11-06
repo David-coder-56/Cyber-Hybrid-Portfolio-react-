@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Briefcase, GraduationCap, Terminal } from 'lucide-react';
+import { Briefcase, GraduationCap, Terminal, BookOpen } from 'lucide-react';
 import { timelineItems } from '../data/data';
 
 const typeConfig = {
@@ -15,6 +15,12 @@ const typeConfig = {
     color: 'text-emerald-400 bg-emerald-500/10 border-emerald-500/30',
     dot: 'bg-emerald-500 shadow-emerald-500/50',
     label: 'Experience',
+  },
+  training: {
+    icon: BookOpen,
+    color: 'text-cyan-400 bg-cyan-500/10 border-cyan-500/30',
+    dot: 'bg-cyan-500 shadow-cyan-500/50',
+    label: 'Training',
   },
   project: {
     icon: Terminal,

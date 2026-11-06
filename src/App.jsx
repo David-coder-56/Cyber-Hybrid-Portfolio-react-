@@ -7,7 +7,6 @@ import Timeline from './sections/Timeline';
 import Skills from './sections/Skills';
 import Projects from './sections/Projects';
 import Certificates from './sections/Certificates';
-import CTFArena from './sections/CTFArena';
 import Contact from './sections/Contact';
 import Footer from './components/Footer';
 import BackgroundCanvas from './components/BackgroundCanvas';
@@ -36,7 +35,6 @@ function App() {
           <Skills />
           <Projects />
           <Certificates />
-          <CTFArena />
           <Contact />
         </main>
 

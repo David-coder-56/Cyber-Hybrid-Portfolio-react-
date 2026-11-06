@@ -15,11 +15,9 @@ const Navbar = ({ darkMode, setDarkMode }) => {
   const navLinks = [
     { name: "Home",         href: "#home" },
     { name: "About",        href: "#about" },
-    // { name: "Timeline",     href: "#timeline" },
     { name: "Skills",       href: "#skills" },
     { name: "Projects",     href: "#projects" },
     { name: "Certificates", href: "#certificates" },
-    // { name: "CTF Arena",    href: "#ctf" },
     { name: "Contact",      href: "#contact" },
   ];
 
